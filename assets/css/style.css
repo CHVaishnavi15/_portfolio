@@ -648,6 +648,48 @@ section {
 }
 
 
+/*--------------------------------------------------------------
+# Events Participated
+--------------------------------------------------------------*/
+
+.Events-Participated {
+  background: none;
+  padding: 15px;
+  font-family: Arial;
+  max-width: 100%;
+  margin: auto;
+}
+
+.Events-Participated .row {
+  margin: 8px -16px;
+}
+/* Add padding BETWEEN each column */
+.Events-Participated .row,
+.Events-Participated .row > .column {
+  padding: 15px;
+}
+
+/* Create four equal columns that float next to each other */
+.Events-Participated .column {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after rows */
+.Events-Participated .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .Events-Participated .column {
+    width: 100%;
+  }
+}
+
+
 
 
 
