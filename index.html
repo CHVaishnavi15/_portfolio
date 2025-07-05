@@ -200,7 +200,7 @@
     </section><!-- End Education Section -->
 
     <!-- ======= Projects Section ======= -->
-    <!-- ======= Projects Section ======= -->
+   <!-- ======= Projects Section ======= -->
 <section id="portfolio" class="portfolio section-bg">
   <div class="container">
 
@@ -241,8 +241,10 @@
 
       <!-- Online Movie Ticket Booking System Video -->
       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-wrap">
-          <video controls width="100%" preload="none" poster="assets/img/portfolio/moviesvedio-thumbnail.jpg">
+        <div class="portfolio-wrap" style="position: relative; width: 100%; padding-top: 56.25%;">
+          <video controls preload="none" 
+            poster="assets/img/portfolio/moviesvedio-thumbnail.jpg"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
             <source src="assets/img/portfolio/moviesvedio.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -255,6 +257,13 @@
 </section>
 <!-- End Projects Section -->
 
+<!-- Optional: Custom CSS to ensure video and image stay same ratio -->
+<style>
+  .portfolio-wrap {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+</style>
 
 <!-- End Projects Section -->
 
