@@ -581,6 +581,16 @@ section {
   opacity: 1;
   bottom: 0;
 }
+/* === Your existing portfolio-details styles === */
+.portfolio-details { ... }
+/* (all your portfolio-details code) */
+
+/* === Add this at the very end === */
+.portfolio-wrap img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Project Details
